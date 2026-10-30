@@ -75,7 +75,7 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent2);outline-offs
 .pillars{position:relative;z-index:2;margin-top:-72px;display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:0 30px 60px -30px rgba(10,15,28,.35)}
 .pillar{display:flex;gap:14px;padding:28px 24px;border-right:1px solid var(--line)}.pillar:last-child{border-right:0}
 .pillar .ic{flex:none;width:28px;height:28px;color:var(--accent)}
-.pillar h3{font-size:16px;margin-bottom:4px}.pillar p{margin:0;font-size:14px;color:var(--muted);line-height:1.5}
+.pillar h3,.pillar .pt{font-size:16px;font-weight:650;letter-spacing:-.01em;line-height:1.3;margin:0 0 4px}.pillar p{margin:0;font-size:14px;color:var(--muted);line-height:1.5}
 /* sections */
 section{padding:110px 0}
 section.alt{background:var(--bg2)}
@@ -135,6 +135,8 @@ section.alt{background:var(--bg2)}
 .foot a{color:rgba(255,255,255,.7);text-decoration:none}.foot a:hover{color:#fff}
 .foot .brand{color:#fff}
 .fbot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.1);margin-top:48px;padding-top:24px;font-size:13px;color:rgba(255,255,255,.5)}
+.step .num,.tl .num{color:#1d4ed8}
+@media (prefers-color-scheme:dark){.step .num,.tl .num{color:#93c5fd}}
 /* v2: páginas interiores, servicios, casos, formulario */
 main{position:relative}
 [hidden]{display:none!important}
@@ -213,9 +215,9 @@ main{position:relative}
 <body class="pg-req">
 <a class="skip" href="#main">Saltar al contenido</a>
 <header class="top"><nav class="wrap nav" aria-label="Principal">
-<a class="brand" href="../" aria-label="Ardu Solutions · Inicio"><img src="../assets/logo.svg" alt="" width="32" height="32"><span>Ardu<b>Solutions</b></span></a>
+<a class="brand" href="../"><img src="../assets/logo.svg" alt="" width="32" height="32"><span>Ardu<b>Solutions</b></span></a>
 <ul class="links"><li><a href="../#servicios">Servicios</a></li><li><a href="../proyectos/">Proyectos</a></li><li><a href="../como-trabajamos/">Cómo trabajamos</a></li><li><a href="../#equipo">Equipo</a></li></ul>
-<div class="navr"><a class="lang" href="../en/request/" hreflang="en" lang="en" aria-label="English">EN</a><a class="btn small primary" href="../solicitar/">Solicitar presupuesto</a></div>
+<div class="navr"><a class="lang" href="../en/request/" hreflang="en" lang="en" aria-label="EN · English">EN</a><a class="btn small primary" href="../solicitar/">Solicitar presupuesto</a></div>
 </nav></header>
 <main id="main">
 <nav class="bc" aria-label="Ruta de navegación"><ol class="wrap"><li><a href="../">Inicio</a></li><li aria-current="page">Solicitar presupuesto</li></ol></nav><section class="phero"><div class="wrap"><span class="kicker lt">Solicitar presupuesto</span><h1>Solicitar presupuesto sin compromiso</h1><p class="lead">Cuéntanos qué necesitas. Te respondemos, hacemos un diagnóstico y te enviamos una propuesta por escrito. Sin compromiso.</p></div></section><section class="reqsec"><div class="wrap reqgrid"><div><form id="solicitud" class="form card" action="https://ardusolutions.pages.dev/api/solicitud" method="post" novalidate data-msgs='{&quot;errv&quot;: &quot;Revisa los campos marcados.&quot;, &quot;errr&quot;: &quot;Has enviado varias solicitudes seguidas. Espera un poco y vuelve a intentarlo.&quot;, &quot;errc&quot;: &quot;No hemos podido verificar que no eres un robot. Vuelve a intentarlo.&quot;, &quot;errs&quot;: &quot;No se ha podido enviar ahora mismo. Inténtalo de nuevo en unos minutos.&quot;, &quot;sending&quot;: &quot;Enviando…&quot;, &quot;send&quot;: &quot;Enviar solicitud&quot;}'>

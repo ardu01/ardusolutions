@@ -73,7 +73,7 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent2);outline-offs
 .pillars{position:relative;z-index:2;margin-top:-72px;display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:0 30px 60px -30px rgba(10,15,28,.35)}
 .pillar{display:flex;gap:14px;padding:28px 24px;border-right:1px solid var(--line)}.pillar:last-child{border-right:0}
 .pillar .ic{flex:none;width:28px;height:28px;color:var(--accent)}
-.pillar h3{font-size:16px;margin-bottom:4px}.pillar p{margin:0;font-size:14px;color:var(--muted);line-height:1.5}
+.pillar h3,.pillar .pt{font-size:16px;font-weight:650;letter-spacing:-.01em;line-height:1.3;margin:0 0 4px}.pillar p{margin:0;font-size:14px;color:var(--muted);line-height:1.5}
 /* sections */
 section{padding:110px 0}
 section.alt{background:var(--bg2)}
@@ -133,6 +133,8 @@ section.alt{background:var(--bg2)}
 .foot a{color:rgba(255,255,255,.7);text-decoration:none}.foot a:hover{color:#fff}
 .foot .brand{color:#fff}
 .fbot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.1);margin-top:48px;padding-top:24px;font-size:13px;color:rgba(255,255,255,.5)}
+.step .num,.tl .num{color:#1d4ed8}
+@media (prefers-color-scheme:dark){.step .num,.tl .num{color:#93c5fd}}
 /* v2: páginas interiores, servicios, casos, formulario */
 main{position:relative}
 [hidden]{display:none!important}
@@ -211,9 +213,9 @@ main{position:relative}
 <body class="pg-how">
 <a class="skip" href="#main">Skip to content</a>
 <header class="top"><nav class="wrap nav" aria-label="Main">
-<a class="brand" href="../../en/" aria-label="Ardu Solutions · Home"><img src="../../assets/logo.svg" alt="" width="32" height="32"><span>Ardu<b>Solutions</b></span></a>
+<a class="brand" href="../../en/"><img src="../../assets/logo.svg" alt="" width="32" height="32"><span>Ardu<b>Solutions</b></span></a>
 <ul class="links"><li><a href="../../en/#servicios">Services</a></li><li><a href="../../en/projects/">Projects</a></li><li><a href="../../en/how-we-work/" aria-current="page">How we work</a></li><li><a href="../../en/#equipo">Team</a></li></ul>
-<div class="navr"><a class="lang" href="../../como-trabajamos/" hreflang="es" lang="es" aria-label="Español">ES</a><a class="btn small primary" href="../../en/request/">Request a quote</a></div>
+<div class="navr"><a class="lang" href="../../como-trabajamos/" hreflang="es" lang="es" aria-label="ES · Español">ES</a><a class="btn small primary" href="../../en/request/">Request a quote</a></div>
 </nav></header>
 <main id="main">
 <nav class="bc" aria-label="Breadcrumb"><ol class="wrap"><li><a href="../../en/">Home</a></li><li aria-current="page">How we work</li></ol></nav><section class="phero"><div class="wrap"><span class="kicker lt">How we work</span><h1>How we work</h1><p class="lead">A clear process so you always know what will happen, who does it and what it will cost before anything starts.</p><div class="btns"><a class="btn primary" href="../../en/request/">Request a free quote <svg class="arr" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></section>
