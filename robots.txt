@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /solicitar/gracias/
+Disallow: /en/request/thanks/
+
+Sitemap: https://ardusolutions.pages.dev/sitemap.xml
