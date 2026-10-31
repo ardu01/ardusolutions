@@ -193,7 +193,10 @@ main{position:relative}
 .f textarea{resize:vertical;min-height:140px}
 .f input:focus,.f select:focus,.f textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
 .f .bad,.bad{border-color:#dc2626!important;box-shadow:0 0 0 3px rgba(220,38,38,.15)}
-.radios{display:flex;flex-wrap:wrap;gap:10px 24px}.radios legend{margin-bottom:8px;width:100%}.radios label{display:flex;align-items:center;gap:8px;font-size:15px;white-space:nowrap}
+.radios{display:flex;flex-wrap:wrap;gap:10px 24px}.radios legend{margin-bottom:8px;width:100%}
+.radios label{display:inline-flex;align-items:center;gap:8px;font-weight:500;cursor:pointer}
+.f.radios input{width:18px;height:18px;padding:0;margin:0;flex:none;accent-color:var(--accent)}
+.consent input{accent-color:var(--accent)}.radios label{display:flex;align-items:center;gap:8px;font-size:15px;white-space:nowrap}
 .hint{margin:-8px 0 0;font-size:14px;color:var(--muted)}
 .hpf{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 .consent{display:flex;gap:10px;align-items:flex-start;font-size:15px}.consent input{margin-top:5px;width:18px;height:18px;flex:none}
@@ -219,7 +222,7 @@ main{position:relative}
 </nav></header>
 <main id="main">
 <section class="hero">
-<img class="hero-bg" src="assets/img/hero.webp" srcset="assets/img/hero-960.webp 960w, assets/img/hero.webp 1280w" sizes="100vw" alt="" width="1280" height="720" fetchpriority="high">
+<picture><source type="image/webp" srcset="assets/img/cabecera-1200.webp 1200w, assets/img/cabecera-1600.webp 1600w, assets/img/cabecera-2400.webp 2400w" sizes="100vw"><img class="hero-bg" src="assets/img/cabecera-1600.jpg" alt="Primer plano de una placa base con circuitos iluminados en azul" width="1600" height="900" fetchpriority="high"></picture>
 <div class="wrap hero-in">
 <div class="eyebrow">Ingeniería · Automatización · IT · IA aplicada</div>
 <h1>Tecnología que trabaja <span class="grad">para ti.</span></h1>
@@ -241,6 +244,6 @@ main{position:relative}
 <div><h2 class="fh">Empresa</h2><ul><li><a href="como-trabajamos/">Cómo trabajamos</a></li><li><a href="proyectos/">Proyectos</a></li><li><a href="./#equipo">Equipo</a></li><li><a href="./#faq">Preguntas frecuentes</a></li></ul></div>
 <div><h2 class="fh">Servicios</h2><ul><li><a href="servicios/domotica/">Domótica para casa</a></li><li><a href="servicios/consultoria-it/">Consultoría IT para pymes</a></li><li><a href="servicios/automatizacion-industrial/">Automatización industrial</a></li><li><a href="servicios/ia-aplicada/">IA aplicada a empresas</a></li></ul></div>
 <div><h2 class="fh">Más</h2><ul><li><a href="en/" hreflang="en">English</a></li><li><a href="https://ardu01.github.io/proyectos/">Todos los proyectos</a></li><li><a href="aviso-legal/">Aviso legal</a></li><li><a href="privacidad/">Política de privacidad</a></li></ul></div>
-</div><div class="wrap fbot"><span>© 2026 Ardu Solutions. Todos los derechos reservados.</span><span>Imagen principal generada con IA. Sin cookies ni rastreadores.</span></div></footer>
+</div><div class="wrap fbot"><span>© 2026 Ardu Solutions. Todos los derechos reservados.</span><span>Sin cookies ni rastreadores.</span></div></footer>
 </body>
 </html>
